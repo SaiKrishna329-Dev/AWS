@@ -21,10 +21,15 @@ AWS NACLs are called stateless because each packet is evaluated independently, w
  NACLs are an additional layer of security that operates at the subnet level. They act as stateless traffic filters for inbound and outbound traffic at the subnet boundary.
 
  Unlike Security Groups, NACLs are associated with subnets, and each subnet can have only one NACL. However, multiple subnets can share the same NACL.
+
  NACLs consist of a numbered list of rules (numbered in ascending order) that are evaluated in order from lowest to highest.
+
  Each rule in the NACL includes a rule number, protocol, rule action (allow or deny), source or destination IP address range, port range, and ICMP (Internet Control Message Protocol) type.
+
  NACL rules can be configured to allow or deny specific types of traffic based on the defined criteria.
+
  They are stateless, which means that if an inbound rule allows traffic, the corresponding outbound traffic must be explicitly allowed using a separate outbound rule.
+
  Changes made to NACL rules may take some time to propagate to all the resources using the associated subnet.
 
 Security Groups:
