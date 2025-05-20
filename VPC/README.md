@@ -30,15 +30,15 @@ Range of IPs:
 | 2nd   | 0 (fixed)                                                 |
 | 3rd   | 144 to 159 → 16 values (because 4 bits can vary: 2⁴ = 16) |
 | 4th   | 0 to 255 → 256 values (because 8 bits can vary: 2⁸ = 256) |
+ 
+Third Octet (Binary)          Decimal         Fourth Octet
+-----------------------      ---------       --------------
+10010000 (start)               144         0 – 255
 
-Third Octet (Binary)      Decimal     Fourth Octet
------------------------   ---------   --------------
-10010000 (start)          144         0 – 255
-
-10010001                  145         0 – 255
+10010001                       145         0 – 255
 
 ...
-10011111 (end)            159         0 – 255
+10011111 (end)                 159         0 – 255
 
 
 IP Addressing:
