@@ -8,6 +8,34 @@ Subnet:
 
 A subnet is a range of IP addresses in your VPC. A subnet must reside in a single Availability Zone. After you add subnets, you can deploy AWS resources in your VPC.
 
+10.0.0.0/24 means 24 bits are redserved for network and rest are for available IPs (256 IPs) -- {(32-24=8)- 2^8 = 256 IPs}
+10.0.140.0/20 means 20 bits are reserved, 32-20=12 --> 2^12=4096 IPs available.  means IPs available from 10.0.140.0 to 10.0.159.255. 
+
+Decimal IP:  10     .   0   .  144  .   0
+Binary IP : 00001010.00000000.10010000.00000000
+Bit Index:  [--- Network Bits (20) ---][-- Host Bits (12) --]
+
+Network bits (fixed):        00001010 00000000 1001---- ----
+                                10       0      144
+Host bits (variable):                       ---- ----
+                                            ^ These can change
+
+Range of IPs:
+| Octet | Range                                                     |
+| ----- | --------------------------------------------------------- |
+| 1st   | 10 (fixed)                                                |
+| 2nd   | 0 (fixed)                                                 |
+| 3rd   | 144 to 159 → 16 values (because 4 bits can vary: 2⁴ = 16) |
+| 4th   | 0 to 255 → 256 values (because 8 bits can vary: 2⁸ = 256) |
+
+Third Octet (Binary)      Decimal     Fourth Octet
+-----------------------   ---------   --------------
+10010000 (start)          144         0 – 255
+10010001                  145         0 – 255
+...
+10011111 (end)            159         0 – 255
+
+
 IP Addressing:
 
 You can assign IP addresses, both IPv4 and IPv6, to your VPCs and subnets. You can also bring your public IPv4 and IPv6 GUA addresses to AWS and allocate them to resources in your VPC, such as EC2 instances, NAT gateways, and Network Load Balancers.
