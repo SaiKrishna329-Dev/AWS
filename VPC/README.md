@@ -9,6 +9,7 @@ Subnet:
 A subnet is a range of IP addresses in your VPC. A subnet must reside in a single Availability Zone. After you add subnets, you can deploy AWS resources in your VPC.
 
 10.0.0.0/24 means 24 bits are redserved for network and rest are for available IPs (256 IPs) -- {(32-24=8)- 2^8 = 256 IPs}
+
 10.0.140.0/20 means 20 bits are reserved, 32-20=12 --> 2^12=4096 IPs available.  means IPs available from 10.0.140.0 to 10.0.159.255. 
 
 Decimal IP:  10     .   0   .  144  .   0
