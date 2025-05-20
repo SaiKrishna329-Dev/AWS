@@ -12,10 +12,13 @@ A subnet is a range of IP addresses in your VPC. A subnet must reside in a singl
 10.0.140.0/20 means 20 bits are reserved, 32-20=12 --> 2^12=4096 IPs available.  means IPs available from 10.0.140.0 to 10.0.159.255. 
 
 Decimal IP:  10     .   0   .  144  .   0
+
 Binary IP : 00001010.00000000.10010000.00000000
+
 Bit Index:  [--- Network Bits (20) ---][-- Host Bits (12) --]
 
 Network bits (fixed):        00001010 00000000 1001---- ----
+
                                 10       0      144
 Host bits (variable):                       ---- ----
                                             ^ These can change
@@ -31,7 +34,9 @@ Range of IPs:
 Third Octet (Binary)      Decimal     Fourth Octet
 -----------------------   ---------   --------------
 10010000 (start)          144         0 – 255
+
 10010001                  145         0 – 255
+
 ...
 10011111 (end)            159         0 – 255
 
