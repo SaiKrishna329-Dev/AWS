@@ -21,7 +21,7 @@ Network bits (fixed):        00001010 00000000 1001---- ----
 
                                 10       0      144
 Host bits (variable):                       ---- ----
-                                            ^ These can change
+                    
 
 Range of IPs:
 | Octet | Range                                                     |
