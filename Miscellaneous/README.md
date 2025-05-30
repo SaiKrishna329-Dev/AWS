@@ -10,8 +10,7 @@ Authentication and Autherization :
 
 AWS Cloud Formation template:
   
-  Think of it as "Infrastructure as Code (IaC)" — instead of manually clicking through the AWS console to set up your resources (like EC2, S3, RDS, etc.), you write a template that 
-  defines everything you want, and CloudFormation sets it up for you.
+  We can think of it as Infrastructure as Code (IaC) — instead of manually clicking through the AWS console to set up your resources (like EC2, S3, RDS, etc.), you write a template that defines everything you want, and CloudFormation sets it up for you.
 
 Example: Create EC2 instance, we can use JSON or YAML for writing templates.
 
