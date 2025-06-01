@@ -1,4 +1,4 @@
-**Authentication and Autherization :**
+# **Authentication and Autherization :**
 
 | **Aspect**            | **Authentication**                  | **Authorization**                       |
 | -----------------   | -------------------------------- | ----------------------------------- |
@@ -8,13 +8,15 @@
 | Example             | Logging into a system            | Accessing admin panel after login   |
 
 
-**AWS Cloud Formation template:**
+
+## **AWS Cloud Formation template:**
   
   We can think of it as Infrastructure as Code (IaC) — instead of manually clicking through the AWS console to set up your resources (like EC2, S3, RDS, etc.), you write a template that defines everything you want, and CloudFormation sets it up for you.
 
 Example: Create EC2 instance, we can use JSON or YAML for writing templates.
 
- **Metrics and Traces**
+
+### **Metrics and Traces**
 
  | Feature        | CloudWatch Metrics (what happened)| CloudWatch Traces (X-Ray) (Why its happened)|
 | --------------  | ------------------------          | --------------------------------- |
@@ -24,7 +26,7 @@ Example: Create EC2 instance, we can use JSON or YAML for writing templates.
 | Auto-collected  | Yes, for AWS services             | Yes, with X-Ray enabled           |
 | Example         | CPU = 80%                         | API Gateway → Lambda → DynamoDB   |
 
-*how they work together*
+**how they work together**
 
 | Task                                         | Tool                         |
 | -------------------------------------------- | ---------------------------- |
