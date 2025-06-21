@@ -37,6 +37,17 @@ Range of IPs:
 
 You can assign IP addresses, both IPv4 and IPv6, to your VPCs and subnets. You can also bring your public IPv4 and IPv6 GUA addresses to AWS and allocate them to resources in your VPC, such as EC2 instances, NAT gateways, and Network Load Balancers.
 
+
+**IPAM:**
+
+| Term               | Meaning                                                                                                                              |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **IPAM**           | AWS **IP Address Manager** — a service for centrally managing IP address space (both IPv4 and IPv6) across AWS accounts and regions. |
+| **CIDR Block**     | A **range** of IP addresses, like `10.0.0.0/16`.                                                                                     |
+| **IPAM-allocated** | Means **IPAM automatically chooses and assigns** the CIDR range for your VPC, subnet, etc., from a pool you define.                  |
+
+
+
 **Network Access Contriol List:**
 
 A Network Access Control List is a stateless firewall that controls inbound and outbound traffic at the subnet level. It operates at the IP address level and can allow or deny traffic based on rules that you define. NACLs provide an additional layer of network security for your VPC.
